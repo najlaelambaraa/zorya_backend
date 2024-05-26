@@ -7,12 +7,8 @@
   },
   "users": [
     {
-      "email": "admin@medusa-test.com",
+      "email": "zorya@zorya.com",
       "password": "supersecret"
-    },
-    {
-      "email": "test@medusa-test.com",
-      "password": "Test567@"
     }
   ],
   "regions": [
