@@ -8,7 +8,7 @@ import { StepContentProps } from "../../../../widgets/onboarding-flow/onboarding
 import { Button, Text } from "@medusajs/ui";
 import getSampleProducts from "../../../../utils/sample-products";
 import prepareRegions from "../../../../utils/prepare-region";
-
+// test
 const ProductsListDefault = ({ onNext, isComplete }: StepContentProps) => {
   const { mutateAsync: createCollection, isLoading: collectionLoading } =
     useAdminCreateCollection();
