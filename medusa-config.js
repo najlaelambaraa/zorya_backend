@@ -42,6 +42,22 @@ const plugins = [
       upload_dir: "uploads",
     },
   },
+  // {
+  //   resolve: `medusa-plugin-email`,
+  //   options: {
+  //     sender: process.env.EMAIL_SENDER,
+  //     transport: {
+  //       host: process.env.EMAIL_HOST,
+  //       port: process.env.EMAIL_PORT,
+  //       secure: process.env.EMAIL_SECURE === "true",
+  //       auth: {
+  //         user: process.env.EMAIL_USER,
+  //         pass: process.env.EMAIL_PASS,
+  //       },
+  //     },
+  //   },
+
+  // },
   {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
@@ -68,6 +84,7 @@ const plugins = [
       process.env.MAILCHIMP_NEWSLETTER_LIST_ID,
     },
   },
+
   
 ];
 
