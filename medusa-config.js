@@ -83,7 +83,7 @@ const plugins = [
       develop: {
         open: true,
         port: 7001,
-        host: "https://zorya-backend.vercel.app",
+        // host: "https://zorya-backend.vercel.app",
         logLevel: "error",
         stats: "normal",
         allowedHosts: "auto",
