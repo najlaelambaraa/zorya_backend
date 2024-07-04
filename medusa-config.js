@@ -71,9 +71,23 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
+      // autoRebuild: true,
+      // develop: {
+      //   open: process.env.OPEN_BROWSER !== "false",
+      // },
+      serve: process.env.NODE_ENV === "development",
       autoRebuild: true,
+      backend: "https://zorya-backend.vercel.app",
+      path: "/app",
+      outDir: "build",
       develop: {
-        open: process.env.OPEN_BROWSER !== "false",
+        open: true,
+        port: 7001,
+        host: "https://zorya-backend.vercel.app",
+        logLevel: "error",
+        stats: "normal",
+        allowedHosts: "auto",
+        webSocketURL: undefined,
       },
     },
   },
@@ -119,8 +133,9 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
+  database_type: "postgres",
   // Uncomment the following lines to enable REDIS
-  // redis_url: REDIS_URL
+  redis_url: REDIS_URL,
   database_extra: process.env.NODE_ENV !== "development" ?
       {
         ssl: {
